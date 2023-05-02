@@ -21,36 +21,36 @@ generatorOptions:
 vars:
 - name: endpoint-base64
   objref:
-    kind: ConfigMap
-    name: csi-s3-parameters
+    kind: Secret
+    name: minio-kubeflow
     apiVersion: v1
   fieldref:
     fieldpath: data.endpoint-base64
 - name: bucket-base64
   objref:
-    kind: ConfigMap
-    name: csi-s3-parameters
+    kind: Secret
+    name: minio-kubeflow
     apiVersion: v1
   fieldref:
     fieldpath: data.bucket-base64
 - name: accessKeyID-base64
   objref:
-    kind: ConfigMap
-    name: csi-s3-parameters
+    kind: Secret
+    name: minio-kubeflow
     apiVersion: v1
   fieldref:
     fieldpath: data.accessKeyID-base64
 - name: secretAccessKey-bas64
   objref:
-    kind: ConfigMap
-    name: csi-s3-parameters
+    kind: Secret
+    name: minio-kubeflow
     apiVersion: v1
   fieldref:
     fieldpath: data.secretAccessKey-bas64
 - name: kubelet-path
   objref:
-    kind: ConfigMap
-    name: csi-s3-parameters
+    kind: Secret
+    name: minio-kubeflow
     apiVersion: v1
   fieldref:
     fieldpath: data.kubelet-path
